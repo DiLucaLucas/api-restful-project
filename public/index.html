@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <!-- Formulario de Login -->
+                <form id="login-form">
+                    <h2>Login</h2>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" required>
+                        <label for="">Email</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" required>
+                        <label for="">Password</label>
+                    </div>
+                    <div class="forget">
+                        <label>
+                            <input type="checkbox"> Remember me
+                        </label>
+                        <label>
+                            <a href="#">Forgot password?</a>
+                        </label>
+                    </div>
+                    <button>Log in</button>
+                    <div class="register">
+                        <p>Don't have an account? <a href="#" onclick="toggleForm()">Register</a></p>
+                    </div>
+                </form>
+
+                <!-- Formulario de Registro -->
+                <form id="register-form" style="display: none;">
+                    <h2>Register</h2>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" required>
+                        <label for="">Email</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" required>
+                        <label for="">Password</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" required>
+                        <label for="">Confirm Password</label>
+                    </div>
+                    <button>Register</button>
+                    <div class="register">
+                        <p>Already have an account? <a href="#" onclick="toggleForm()">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js'></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
